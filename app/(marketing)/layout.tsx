@@ -8,7 +8,7 @@ export default function MarketingLayout({ children }: Props) {
     return (
         <div className="h-full bg-slate-100">
             {/* Navbar */}
-            <main className="pt-40 pb-20 bg-slate-400">
+            <main className="pt-40 pb-20 bg-slate-100">
                 {children}
             </main>
             {/* Footer */}
