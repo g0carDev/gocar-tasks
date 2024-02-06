@@ -1,5 +1,5 @@
-import { PropagateToWorkersField } from "next/dist/server/lib/router-utils/types";
-
+import { Footer } from "./_components/footer";
+import { Navbar } from "./_components/navbar";
 interface Props {
     children: React.ReactNode
 }
@@ -7,11 +7,11 @@ interface Props {
 export default function MarketingLayout({ children }: Props) {
     return (
         <div className="h-full bg-slate-100">
-            {/* Navbar */}
+            <Navbar />
             <main className="pt-40 pb-20 bg-slate-100">
                 {children}
             </main>
-            {/* Footer */}
+            <Footer />
         </div>
     )
 }
